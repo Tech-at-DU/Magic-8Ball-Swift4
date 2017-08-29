@@ -1,11 +1,11 @@
 ---
-title: "Creating Your First Xcode Project""
+title: "Creating Your First Xcode Project"
 slug: new-xcode-project
 ---
 
-Most of this tutorial will be devoted towards learning about and getting familiar with Xcode. In this section, we'll have our first introduction to Xcode and go through the process of creating a new Xcode project for our app.
+Most of this tutorial will be devoted towards learning about Xcode. In this section, we'll have our first introduction to Xcode and go through the process of creating a new Xcode project for our app.
 
-# What is Xcode?
+## What is Xcode?
 
 Xcode is an _Integrated Development Environment_ (IDE) for developing apps in the Apple ecosystem. This includes macOS, iOS, watchOS, and tvOS apps. IDEs (like Xcode) contain and integrate many powerful tools that make software development easier for programmers.
 
@@ -50,7 +50,7 @@ If you need a step-by-step breakdown:
 1. In the _Team_ dropdown menu, set it as `None`. If you already have an `Apple Developer Team`, you can select that instead.
 1. In the _Organization Name_, you can enter one of the following: your name, your fake company name, or _Make School_.
 1. In the _Organization Identifier_, set it as _com.makeschool_. If you own a domain name, you can set this field as your reverse domain name. For example, if you own the domain name _happycarrot.com_, you would put _com.happycarrot_ as your identifier.
-1. The _Bundle Identifier_ will be automatically constructed from your _Organization Identifier_ and _Product Name_. Apple uses the bundle identifier to uniquely identify each app in the _App Store_.
+1. The _Bundle Identifier_ will be automatically generated from your _Organization Identifier_ and _Product Name_. Apple uses the bundle identifier to uniquely identify each app in the _App Store_.
 1. In the _Language_ dropdown menu, make sure it's set to `Swift`.
 1. Finally, leave all three checkboxes unchecked. We won't use _Core Data_ or testing in this tutorial. Those are more advanced topics we'll cover at another time.
 
@@ -96,7 +96,12 @@ Here's a quick breakdown of each of the areas above:
 1. Utilities (Purple): gives info about files, set properties of items in Interface Builder
 1. Debug Area (Blue): test and debug your code at runtime
 
-Each area has many more tools and features built-in, so don't think of the summary above as a comprehensive list. We've just highlighted the key functions of each part of Xcode. 
+Each area has many more tools and features built-in, so don't think of the summary above as a comprehensive list. We've just highlighted the key functions of each part of Xcode.
+
+> [info]
+You can hide and display each of these areas based on which tools you're using at the moment. You can do this by toggling the buttons of the far right side of the toolbar: ![Display Xcode Areas](assets/display_xcode_areas.png)
+>
+If your computer doesn't have a large screen, it's often helpful to hide these areas when you're not using them so you can focus on the areas you are using. We'll see this in action later in the tutorial.
 
 Let's first take a look at the toolbar so we can run our app in the simulator.
 
@@ -129,6 +134,11 @@ If not selected already, change your scheme to build and run on the _iPhone 7_ s
 >
 ![Select iPhone 7 Scheme](assets/iphone_7_scheme.png)
 
+<!-- break -->
+
+> [info]
+We're specifically using the iPhone 7 simulator for convenience right now. In the future, you can use any simulator of your choice or even your own device.
+
 ## Run Button
 
 ![Run Button](assets/toolbar_run_btn.png)
@@ -158,6 +168,10 @@ The _Stop_ button (looks like a square) will stop the instance of your app if it
 
 > [action]
 Click the _Stop_ button to terminate the running instance of your app on the simulator. For future reference, the keyboard shortcut command-. (CMD-.) will stop your app.
+
+You'll see that the simulator will stop running your app.
+
+# Progress So Far
 
 At this point, you've created your first Xcode project and run the empty new project in the simulator. As we move forward, we'll keep running our app on the simulator to check that our project is working as expected.
 

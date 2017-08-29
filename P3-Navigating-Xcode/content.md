@@ -23,7 +23,9 @@ Each of these navigator tabs are useful tools that you'll eventually learn to us
 - _Find navigator_: search through your project to find files
 - _Issue navigator_: locate and fix warnings and errors in your project
 
-In this tutorial, we'll only focus on the first and fifth tab, the _Project navigator_ and _Issue navigator_ respectively.
+In this tutorial, we'll only focus on the first tab, the _Project navigator_, but you'll learn about all of them eventually.
+
+<!-- include issues navigator? -->
 
 ## Project Navigator
 

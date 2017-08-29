@@ -5,6 +5,8 @@ slug: conclusion
 
 Congrats! You've just built your first iOS app.
 
+![Finished App](assets/finished_app_flow.png)
+
 You taken your first steps on your journey to become an iOS developer.
 
 In this tutorial, you were introduced to many new concepts in Xcode and iOS development. To recap, you learned how to...
@@ -35,9 +37,13 @@ Coming up with new ideas for apps can be hard. To help out, you're going to crea
 
 Try completing this challenge on your own. Refer back to the tutorial only when you get stuck.
 
+> [info]
+**Pitching That**
+>
+Another fun way to make use of this app (when you're done) is by practicing your pitching skills with friends. Take turns generating startup ideas with your app and pretend to give a 1 minute pitch to your friends. Your friends can act as investors. At the end of each round, everyone can decide who got funding and who didn't.
+
 ## App Design
 
-<!-- insert designs -->
 ![Startup Idea Generator Design](assets/startup_generator_design.png)
 
 Here's an example screenshot for the final app. Feel free to get creative and add your style into app design.

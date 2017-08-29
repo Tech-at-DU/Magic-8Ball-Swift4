@@ -3,7 +3,7 @@ title: "Connecting Code"
 slug: connecting-code
 ---
 
-In this section, we'll take a look at how our storyboard connects to code. When you run the app now, you'll notice that when we tap (or click in our case) the _shake button_ in the simulator, nothing happens.
+In this section, we'll take a look at how our storyboard connects to code. When you run the app now, you'll notice that when we click _shake button_ in the simulator, nothing happens.
 
 That's because our app won't do anything if we don't write any code. You can think of the code you write as instructions that tell the app what to do when a user is using it. When there aren't any instructions, the app won't do anything.
 
@@ -11,7 +11,9 @@ In the example of responding to a button tap, we'll need to write code to tell t
 
 # How Is It Connected?
 
-One of the most biggest sticking points for beginners is understanding how your code is connected to storyboard. To figure this out, we'll need to first learn about the _Assistant Editor_.
+One of the most biggest sticking points for beginners is understanding how your code is connected to storyboard. Xcode connects your storyboard to Swift code by using a combination of the _Identity Inspector_, _IBOutlets_ and _IBActions_.
+
+In order to see this, we'll first need to learn about the _Assistant Editor_.
 
 On the right side of your toolbar, there are two groups of 3 buttons that you can toggle. We'll focus on the first group on the left first.
 
@@ -19,7 +21,7 @@ On the right side of your toolbar, there are two groups of 3 buttons that you ca
 
 The three buttons highlighted above allow you to toggle your editor mode. Only one of these modes can be active at a time.
 
-As you can see, the first button, or the _Standard Editor_, is already active. That's because we've already been using the _Standard Editor_ this whole time.
+As you can see, the first button, or the _Standard Editor_, is already active. That's because we've already been using the _Standard Editor_ this whole time. The _Standard Editor_ doesn't do anything fancy. It simply gives you a single, large editor window to focus on a single file.
 
 The second button set the editor mode to the _Assistant Editor_. This editor mode is for opening and editing multiple files side-by-side.
 
@@ -28,9 +30,7 @@ If you haven't already, toggle the button from the _Standard Editor_ to the _Ass
 >
 ![Assistant Editor Active](assets/assistant_editor_active.png)
 
-The first thing you might notice, is the lack of screen space for each open file when we use the _Assistant Editor_. We can make this better by hiding the _Navigator_ and _Utilities_ panes.
-
-On the right-side of the toolbar, we can use the second group of buttons to hide the _Navigator_ and _Utilities_ panes.
+The first thing you might notice, is the lack of screen space for each open file when we use the _Assistant Editor_. We can make this better by hiding unneeded Xcode tools like the _Navigator_. You can do this by using the second group of buttons on the far right-side of the toolbar.
 
 ![Display Xcode Areas](assets/display_xcode_areas.png)
 
@@ -244,7 +244,10 @@ As you can see, we override the `motionEnded(_:with:)` event and check for the `
 
 # Keeping Things DRY
 
-One general rule of thumb for programming is keeping things _DRY_. DRY stands for Don't Repeat Yourself. In other words, you should bed constantly copying and pasting the same code over and over in your codebase.
+One general rule of thumb for programming is keeping things _DRY_. DRY stands for Don't Repeat Yourself. In other words, you shouldn't be copying and pasting the same code over and over in your codebase.
+
+> [info]
+Why do you think copying and pasting your code in multiple places is bad practice?
 
 In our current logic, you can see that we have the same logic for randomly choosing and display an answer twice. We can refactor this to a single method and call this method from both the shake event and button tap instead.
 

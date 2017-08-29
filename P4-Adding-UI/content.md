@@ -106,7 +106,7 @@ The positioning doesn't have to be perfect, but if you want to be more precise y
 > [info]
 In this tutorial, we'll be setting a pre-defined frame for each of our subviews. That means that if the user is using a simulator or iPhone with a different screen size, our UI will be incorrectly sized.
 >
-This is ok _for now_. This tutorial is more focused on making sure you get a lay of the land with Xcode and iOS development. In the next Tip Calculator tutorial, you'll learn about using tools like auto-layout to create dynamically re-sizable views.
+This is ok _for now_. This tutorial is more focused on making sure you get a lay of the land with Xcode and iOS development. In the next Tip Calculator tutorial, you'll learn about using tools like auto-layout and stack views to create dynamically re-sizable views.
 
 # Adding a Label
 
