@@ -3,7 +3,7 @@ title: "Intro to Magic 8-Ball"
 slug: intro-magic8
 ---
 
-In this tutorial, you'll learn the basics of building iOS apps by building your first app: a Magic 8-Ball!
+Welcome to the first of the Make School's iOS apps tutorial series! In this tutorial, you'll learn the basics of building iOS apps by building your first app: a Magic 8-Ball!
 
 If you're not familiar with the Magic 8-Ball, it's an 8-Ball with _mysterious_ fortune-telling powers. You can use it by asking simple yes or no questions and shaking the 8-ball for an answer.
 
@@ -19,7 +19,7 @@ Pretty useful huh? When you're finished with the tutorial, you'll be able to use
 
 # Who Is This For?
 
-Beginners (little to no previous iOS experience) who are taking their first steps to build an iOS app. 
+Beginners (little to no previous iOS experience) who want to get started by building their first iOS app.
 
 ## What You Should Already Know
 
@@ -57,15 +57,15 @@ Now that I have your attention...
 
 To succeed as an iOS developer and build awesome apps, you'll need to know more than just code. This tutorial will introduce new topics like _getting to know Xcode_ and _creating UI with Interface Builder_, many which don't involve writing code. This might seem irrelevant at first, however you won't be able to build iOS apps without learning about these subjects first.
 
-As you go through the tutorial, pay attention when learning to use Xcode. Xcode will be your bread and butter. The more fluent you are with it, the easier it'll be to build beautiful, thoughtful apps.
+As you go through the tutorial, pay attention when learning to use Xcode. Xcode will be your bread and butter. The more fluent you are with it, the easier it'll be to build beautiful, well-executed apps.
 
 Most importantly, make sure you're having fun. Building iOS apps is challenging, but also extremely rewarding. There's no feeling like watching your own apps come to life and feeling the pride from knowing you built it yourself!
 
 # If You Get Stuck
 
-Getting stuck when coding (and debugging) is a natural part of the programming process. If you find yourself stuck on a problem or lost, pause for a moment and take a breath. Then retrace your steps and make sure you've follow the tutorial step-by-step. It's easy to make typos or to accidentally skip over important steps.
-
 "Sometimes, magic is just someone spending more time on something than anyone else might reasonably expect." - Teller (Penn & Teller)
+
+Getting stuck when coding (and debugging) is a natural part of the programming process. If you find yourself stuck on a problem or lost, pause for a moment and take a breath. Then retrace your steps. Make sure you've follow each step of the tutorial. It's easy to make typos or to accidentally skip over important steps.
 
 If you want to compare your code to the solution, you can find it here.
 

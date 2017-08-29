@@ -34,10 +34,10 @@ On the right-side of the toolbar, we can use the second group of buttons to hide
 
 ![Display Xcode Areas](assets/display_xcode_areas.png)
 
-You can use these buttons to toggle between hiding and displaying the _Navigator_, _Debugger_ and _Utilities_ areas. Let's go ahead and close the _Utilities area_ for a little more screen real-estate.
+You can use these buttons to toggle between hiding and displaying the _Navigator_, _Debugger_ and _Utilities_ areas. Let's go ahead and close the _Navigator area_ for a little more screen real-estate.
 
 > [action]
-Close the _Navigator_ pane by clicking on the first of the buttons:
+Close the _Navigator_ pane by clicking on the first of the buttons. Keep the _Utilities area_ open as we'll need it soon.
 >
 ![Hide Navigator](assets/hide_navigator.mov)
 
@@ -277,9 +277,11 @@ override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
 }
 ```
 
-Run your app and test out your new Magic 8-Ball. Be sure to text both your new shake gesture and the existing button tap logic to see that they work.
+Run your app and test out your new Magic 8-Ball. Be sure to text both your new shake gesture and the existing button tap logic to see that they work. To test the shake gesture in the iPhone 7 simulator, make sure the simulator is active and select the hardware menu. In the dropdown, you will see an option for `Shake Gesture`.
 
-# Conclusion
+![Simulator Shake](assets/simulator_shake.png)
+
+## Wrapping Up
 
 In this last section, we took the UI we built in storyboard and hooked it up to our code. We looked at the relationship between storyboard and Swift source files and how they communicate on a basic level.
 

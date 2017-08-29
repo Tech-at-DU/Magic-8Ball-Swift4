@@ -8,13 +8,13 @@ Up to this point, we haven't done anything that changes what our app will do whe
 In this section, we'll build the UI for our Magic 8-Ball.
 
 > [info]
-What is UI?
+**What is UI?**
 >
 User interface, commonly referred to as UI, are any elements that your app will display on screen to a user. This includes visual elements like text and images as well as interactive elements like buttons, sliders and tabs. In programming, it's also common to refer to UI as your _views_.
 
 # Introducing View Controllers
 
-If you're planning to build iOS apps, you'll need to learn about the `UIViewController`. `UIViewController` are one of the fundamental building blocks of iOS development.
+If you're planning to build iOS apps, you'll need to learn about the `UIViewController`. View controllers are one of the fundamental building blocks of iOS development.
 
 The `UIViewController` is a class that is responsible for _controlling_ it's set of _views_. Each view controller has a root view that acts as a canvas to place other subviews.
 
@@ -24,7 +24,7 @@ The `UIViewController` is a class that is responsible for _controlling_ it's set
 
 As you can see above, both the text label and button are subviews placed on top of the view controller's root view.
 
-As a beginner, you can think of each screen of your app as a view controller. All buttons, text, images are _subviews_ that the corresponding view controller object controls. If the user taps a button, the view controller will specify what happens.
+As a beginner, you can think of each screen of your app as a view controller. All buttons, text, images are _subviews_ that the corresponding view controller object controls. If the user taps a button, the view controller will be responsible for what happens.
 
 > [info]
 Although we'll only use a single view controller in this tutorial, you can have any number of view controllers in your app.
@@ -36,7 +36,7 @@ Next, let's build our UI in the default view controller that comes with every _S
 First we'll need to open our storyboard file.
 
 > [action]
-In your Project navigator, select the `Main.storyboard` file. You'll see your editor area change to the following: 
+In your Project navigator, select the `Main.storyboard` file. You'll see your editor area change to the following:
 
 ![Main Storyboard Overview](assets/main_storyboard_overview.png)
 
@@ -75,7 +75,7 @@ First we'll look at the _Attributes Inspector_ which changes the attributes of a
 1. Next, navigate to the _Attributes Inspector_ tab in the _Utilities area_. It is the 4th icon from the left. ![Open Attributes Inspector](assets/attributes_inspector.png)
 1. Last, find the title field and change it from the default text `Button` to `Shake It!`. ![Set Button Title](assets/set_btn_title.png)
 
-You should now see a squished button with the `Skip It!` title. 
+You should now see a squished button with the `Shake It!` title.
 
 ![Squished Button](assets/squished_button.png)
 

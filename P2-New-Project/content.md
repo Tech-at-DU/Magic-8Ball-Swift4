@@ -3,7 +3,7 @@ title: "Creating Your First Xcode Project""
 slug: new-xcode-project
 ---
 
-A large portion of this tutorial will be dedicated to learning about and getting familiar with Xcode. In this section, we'll have our first introduction to Xcode and go through the process of creating a new project.
+Most of this tutorial will be devoted towards learning about and getting familiar with Xcode. In this section, we'll have our first introduction to Xcode and go through the process of creating a new Xcode project for our app.
 
 # What is Xcode?
 
@@ -18,7 +18,7 @@ As you learn to build apps in Xcode, you'll use many of these tools. Tools that 
 - Assistant Editor: edit multiple files in Xcode side-by-side
 - Simulator: test and run your app on a simulated iPhone on your computer
 
-We'll go through each of these tools as we build our Magic 8-Ball.
+We'll go through each of these tools more in-depth as we build our Magic 8-Ball.
 
 > [info]
 It's important to note, that Xcode contains many more advanced, powerful tools than the ones mentioned here. We won't go over the more advanced tools in this tutorial.
@@ -44,7 +44,7 @@ In the project details prompt, enter the following information:
 >
 ![Filled Project Details](assets/filled_project_details.png)
 >
-Breaking down the form above step by step:
+If you need a step-by-step breakdown:
 >
 1. In the _Product Name_ field, enter `MagicEightBall`. This is what Xcode will name your project in your file directory. To prevent potential name-related problems, it's best to stick with alphanumeric characters (letters and numbers) and avoid special characters.
 1. In the _Team_ dropdown menu, set it as `None`. If you already have an `Apple Developer Team`, you can select that instead.
@@ -53,6 +53,8 @@ Breaking down the form above step by step:
 1. The _Bundle Identifier_ will be automatically constructed from your _Organization Identifier_ and _Product Name_. Apple uses the bundle identifier to uniquely identify each app in the _App Store_.
 1. In the _Language_ dropdown menu, make sure it's set to `Swift`.
 1. Finally, leave all three checkboxes unchecked. We won't use _Core Data_ or testing in this tutorial. Those are more advanced topics we'll cover at another time.
+
+<!-- break -->
 
 > [action]
 To finish up and create our new project:
@@ -114,7 +116,7 @@ These buttons and controls allow you to build and run your app on either a simul
 
 ![Scheme Dropdown](assets/toolbar_scheme_dropdown.png)
 
-The _Scheme_ dropdown menu will allow you to edit and manage multiple _schemes_. A _scheme_ tells Xcode what to build and run when you press the _Run_ button (we'll cover that next.) As a beginner, you won't need to worry about handling with multiple schemes. Your current scheme will build and run your app.
+The _Scheme_ dropdown menu will allow you to edit and manage multiple _schemes_. A _scheme_ tells Xcode what to build and run when you press the _Run_ button (we'll cover that next.) As a beginner, you won't need to worry about handling with multiple schemes. Your default scheme will build and run your app.
 
 The second half of the scheme dropdown allows you to specific a simulator or device that you want your selected scheme to run on. For us, we want to run our app on an _iPhone 7_ simulator.
 
