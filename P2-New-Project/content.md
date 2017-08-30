@@ -21,7 +21,7 @@ As you learn to build apps in Xcode, you'll use many of these tools. Tools that 
 We'll go through each of these tools more in-depth as we build our Magic 8-Ball.
 
 > [info]
-It's important to note, that Xcode contains many more advanced, powerful tools than the ones mentioned here. We won't go over the more advanced tools in this tutorial.
+It's important to note, that Xcode contains many more advanced, powerful tools than the ones mentioned here. We won't go over many of tools in this tutorial, just the most important ones to give you and introduce to iOS development.
 
 # Your First Xcode Project
 
