@@ -7,9 +7,9 @@ Most of this tutorial will be devoted towards learning about Xcode. In this sect
 
 ## What is Xcode?
 
-Xcode is an _Integrated Development Environment_ (IDE) for developing apps in the Apple ecosystem. This includes macOS, iOS, watchOS, and tvOS apps. IDEs (like Xcode) contain and integrate many powerful tools that make software development easier for programmers.
+Xcode is an _Integrated Development Environment_ (IDE) for developing apps in the Apple ecosystem. We'll be focusing on iOS apps, but you can also make apps for macOS, watchOS, and tvOS apps. IDEs (like Xcode) contain and integrate many powerful tools that make software development easier for programmers.
 
-As you learn to build apps in Xcode, you'll use many of these tools. Tools that you'll use commonly on a daily basis include:
+As you learn to build apps in Xcode, you'll use many of these tools. Tools that you'll use commonly on a daily basis might include:
 
 - Source Code Editor: write and edit code
 - Interface Builder: build and visualize user interfaces (UI) without code
@@ -21,7 +21,7 @@ As you learn to build apps in Xcode, you'll use many of these tools. Tools that 
 We'll go through each of these tools more in-depth as we build our Magic 8-Ball.
 
 > [info]
-It's important to note, that Xcode contains many more advanced, powerful tools than the ones mentioned here. We won't go over many of tools in this tutorial, just the most important ones to give you and introduce to iOS development.
+It's important to note, that Xcode contains many more tools than the ones mentioned here. We won't go over every Xcode tools in this tutorial, only the most important ones to give you and introduce to iOS development.
 
 # Your First Xcode Project
 
@@ -98,30 +98,59 @@ Here's a quick breakdown of each of the areas above:
 
 Each area has many more tools and features built-in, so don't think of the summary above as a comprehensive list. We've just highlighted the key functions of each part of Xcode.
 
-> [info]
-You can hide and display each of these areas based on which tools you're using at the moment. You can do this by toggling the buttons of the far right side of the toolbar: ![Display Xcode Areas](assets/display_xcode_areas.png)
->
-If your computer doesn't have a large screen, it's often helpful to hide these areas when you're not using them so you can focus on the areas you are using. We'll see this in action later in the tutorial.
+# The Toolbar
 
-Let's first take a look at the toolbar so we can run our app in the simulator.
+The Xcode toolbar provides easy access to information and buttons that you'll use often. You can see it at the very top of your Xcode IDE: ![Xcode Toolbar](assets/xcode_toolbar.png)
+
+Let's go over some of the most important parts of the toolbar and figure out how to run our app.
+
+## Xcode Status Bar
+
+In the center of the toolbar, you'll see the Xcode status bar:
+
+![Status Bar](assets/toolbar_status_bar.png)
+
+The status bar provides helpful information about your project. It'll change and update as you use Xcode.
+
+For example, if Xcode finds warnings or errors when it _builds_ (more on this soon) your project, it'll display it in the status bar. You can see this below:
+
+![Status Bar Errors](assets/status_bar_errors.png)
+
+Notice the yellow warning icon and the red error icon on the right side of the status bar.
+
+## Showing / Hiding Xcode Areas
+
+You can also hide and display the _Navigator_, _Debugger_ and _Utilities_ based on which tools you're using at the moment. This can be done by toggling the buttons of the far right side of the toolbar:
+
+![Display Xcode Areas](assets/display_xcode_areas.png)
+
+If your computer doesn't have a large screen, it's often helpful to hide these areas when you're not using them so you can focus on the areas you are using. We'll see this in action later in the tutorial.
 
 # Running Our App
 
-Before moving onto the next section, we'll run our app. Let's take a closer look at the Xcode toolbar at the top of the IDE.
+Let's go through the process of running our app on the simulator.
 
-![Xcode Toolbar](assets/xcode_toolbar.png)
+> [info]
+We're specifically using the iPhone 7 simulator for convenience right now. In the future, you can use any simulator of your choice or even your own device.
 
-Take a look at the first grouping of buttons on the left-hand side. You should see:
+Take a look at the group of buttons on the left-hand side. You should see:
 
 ![Toolbar Run Group](assets/toolbar_run_group.png)
 
-These buttons and controls allow you to build and run your app on either a simulator or your iPhone.
+These buttons and controls allow you to _build_ and run your app on either a simulator or your iPhone.
+
+> [info]
+**What is the build process?**
+>
+The build process, also referred to as building, is the series of tasks that must be completed in order to turn your code into an app that can be run on a device (or simulator.)
+>
+One of these tasks is _compiling_ your code. This means that the compiler turns your Swift code into machine-code (instructions that your computers can read.) During this process, the compiler may find errors with your code. If it does, the build process will fail and Xcode will display the errors in the status bar as shown previously.
 
 ## Scheme Dropdown
 
 ![Scheme Dropdown](assets/toolbar_scheme_dropdown.png)
 
-The _Scheme_ dropdown menu will allow you to edit and manage multiple _schemes_. A _scheme_ tells Xcode what to build and run when you press the _Run_ button (we'll cover that next.) As a beginner, you won't need to worry about handling with multiple schemes. Your default scheme will build and run your app.
+The _Scheme_ dropdown menu will allow you to edit and manage multiple _schemes_. A _scheme_ tells Xcode **what** to build and run when you press the _Run_ button. As a beginner, you don't need to worry about dealing with multiple schemes.
 
 The second half of the scheme dropdown allows you to specific a simulator or device that you want your selected scheme to run on. For us, we want to run our app on an _iPhone 7_ simulator.
 
@@ -129,15 +158,14 @@ Click on the right-side of the _Scheme_ dropdown to see a full list of options. 
 
 ![Scheme Dropdown](assets/toolbar_scheme_dropdown_open.png)
 
+Let's change the device our scheme will run on.
+
 > [action]
-If not selected already, change your scheme to build and run on the _iPhone 7_ simulator.
+Change your scheme to build and run on the _iPhone 7_ simulator. Click on the second half of the scheme dropdown menu and select _iPhone 7_ simulator.
 >
 ![Select iPhone 7 Scheme](assets/iphone_7_scheme.png)
 
-<!-- break -->
-
-> [info]
-We're specifically using the iPhone 7 simulator for convenience right now. In the future, you can use any simulator of your choice or even your own device.
+With our simulator set, we can move on to build and run our project.
 
 ## Run Button
 
@@ -148,17 +176,18 @@ If you haven't guessed already, the _Run_ button will build and run your active 
 > [action]
 Click the _Run_ button now and watch Xcode build and run your empty project. In the future, you can also use the keyboard shortcut command-r (CMD-r) to run your project.
 
-The first time you run your app, you may see a dialog that asks for your password:
+<!-- break -->
 
-![Debug Permission](assets/debug_dialog.png)
-
+> [info]
+The first time you run your app, you may see a dialog that asks for your password: ![Debug Permission](assets/debug_dialog.png)
+>
 Enter and click `Continue`. This permission is necessary to run your app using the _debugger_ (more on this later.)
 
 If all goes well, you'll see a simulator with your app launch:
 
 ![Empty Simulator](assets/empty_simulator.png)
 
-If you're wondering why there's just a blank white screen, it's because we haven't added anything to our app yet. As we build our app, we'll see the changes and functionality appear when we run our app.
+If you're wondering why there's just a blank white screen, it's because we haven't added anything to our app yet. As we develop our app, we'll see the changes and functionality appear when we run our app.
 
 ## Stop Button
 
