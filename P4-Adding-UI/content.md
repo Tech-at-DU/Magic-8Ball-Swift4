@@ -50,7 +50,7 @@ Each of the highlighted areas is important to building your UI in your Main stor
 Let's add our Magic 8-Ball _Shake_ button to our view controller.
 
 > [action]
-![Add Button To View Controller](assets/add_button_to_vc.mov)
+![Add Button To View Controller](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/04-adding-ui/add_button_to_vc.mp4)
 >
 Find the `Button` object in the _Object Library_ and drag and drop it onto the root view of your view controller.
 
@@ -99,7 +99,7 @@ A simpler, but less precise way of changing our button's frame is by selecting i
 > [action]
 Change your skip button's frame to be centered and positioned along the bottom of the Interface Builder view controller.
 >
-![Resize Button](assets/resize_button.mov)
+![Resize Button](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/04-adding-ui/resize_button.mp4)
 
 The positioning doesn't have to be perfect, but if you want to be more precise you can use the _Size Inspector_.
 
@@ -115,7 +115,7 @@ To complete our UI, we'll also need to add a label to display the Magic 8-Ball's
 > [action]
 From the _Object Library_ find the label and drag it onto center of the view controller's root view.
 >
-![Add Label](assets/add_label_to_vc.mov)
+![Add Label](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/04-adding-ui/add_label_to_vc.mp4)
 
 Next, we'll change the size and attributes of our label.
 

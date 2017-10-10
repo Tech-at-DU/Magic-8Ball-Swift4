@@ -39,7 +39,7 @@ You can use these buttons to toggle between hiding and displaying the _Navigator
 > [action]
 Close the _Navigator_ pane by clicking on the first of the buttons. Keep the _Utilities area_ open as we'll need it soon.
 >
-![Hide Navigator](assets/hide_navigator.mov)
+![Hide Navigator](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/hide_navigator.mp4)
 
 When working with the _Assistant Editor_, it's often helpful to hide areas of Xcode that we aren't using to free up more screen space.
 
@@ -80,7 +80,7 @@ With our `Main.storyboard` and `ViewController.swift` files open side by side, l
 > [action]
 Create an IBOutlet for your answer label.
 >
-Select the answer label in _Interface Builder_. Next hold down control and drag into your `ViewController.swift` file. ![Answer Label IBOutlet](assets/answer_label_iboutlet.mov)
+Select the answer label in _Interface Builder_. Next hold down control and drag into your `ViewController.swift` file. ![Answer Label IBOutlet](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/answer_label_iboutlet.mp4)
 
 Repeat the same process for the _shake button_.
 
@@ -112,7 +112,7 @@ Create a IBAction from your _shake button_ in your view controller source file.
 1. When prompted to name your IBOutlet, change the connection type from `Outlet` to `Action` using the dropdown menu.
 1. Name the IBAction, `shakeButtonTapped`.
 >
-![Button IBAction](assets/button_ibaction.mov)
+![Button IBAction](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/button_ibaction.mp4)
 
 You'll notice it creates a function within your view controller. Whenever the _shake button_ is tapped, this function will be called.
 
