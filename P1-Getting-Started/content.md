@@ -70,6 +70,4 @@ Most importantly, make sure you're having fun. Building iOS apps is challenging,
 
 Getting stuck when coding (and debugging) is a natural part of the programming process. If you find yourself stuck on a problem or lost, pause for a moment and take a breath. Maybe take a walk. Then retrace your steps (in the tutorial, not the walk.) Make sure you've follow each step of the tutorial. It's easy to make typos or to accidentally skip over important steps.
 
-If you want to compare your code to the solution, you can find it here.
-
-TODO: insert link to github repo
+If you want to compare your code to the solution, you can find it [here](https://github.com/MakeSchool-Tutorials/Magic-8Ball-Swift4-Solution).

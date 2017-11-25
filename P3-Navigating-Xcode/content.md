@@ -108,13 +108,14 @@ For our Magic 8-Ball app, we'll only add the app icon images to be displayed on 
 > [action]
 Go ahead and download the Magic 8-Ball app icon images by [clicking here](https://www.dropbox.com/s/cs880nu9xi0qlq6/magic_app_icon.zip?dl=1). After downloading and unzipping your image assets, drag and drop the `app_icon@2x.png` into `iPhone App iOS 7-11 60pt` @2x empty placeholder. Repeat and do the same for `app_icon@3x.png`.
 
-<!-- TODO: add app icon image links -->
-
 When you're finished, your _AppIcon_ image set should look like the following:
 
 ![App Icon Set](assets/app_icon_set.png)
 
 You've successfully added a custom app icon to your Magic 8-Ball app!
+
+> [info]
+After adding your Magic 8-Ball app icon, you'll notice some new warnings appear. These appear because our Xcode project is expecting additional version of our app icon for the App Store and the iPad device. It's ok to ignore these warnings for this tutorial.
 
 # Testing Our Changes
 
