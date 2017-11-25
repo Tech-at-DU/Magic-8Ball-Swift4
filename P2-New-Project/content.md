@@ -11,17 +11,17 @@ Xcode is an _Integrated Development Environment_ (IDE) for developing apps in th
 
 As you learn to build apps in Xcode, you'll use many of these tools. Tools that you'll use commonly on a daily basis might include:
 
-- Source Code Editor: write and edit code
-- Interface Builder: build and visualize user interfaces (UI) without code
-- Debugger: test, catch and debug problems in your code
-- Compiler: helps you find mistakes in your code and offers "Fix-its" suggestions
-- Assistant Editor: edit multiple files in Xcode side-by-side
-- Simulator: test and run your app on a simulated iPhone on your computer
+- **Source Code Editor:** write and edit code
+- **Interface Builder:** build and visualize user interfaces (UI) without code
+- **Debugger:** test, catch and debug problems in your code
+- **Compiler:** helps you find mistakes in your code and offers "Fix-its" suggestions
+- **Assistant Editor:** edit multiple files in Xcode side-by-side
+- **Simulator:** test and run your app on a simulated iPhone on your computer
 
 We'll go through each of these tools more in-depth as we build our Magic 8-Ball.
 
 > [info]
-It's important to note, that Xcode contains many more tools than the ones mentioned here. We won't go over every Xcode tools in this tutorial, only the most important ones to give you and introduce to iOS development.
+Remember, Xcode contains many more tools that the ones listed above. In this tutorial, we limit our focus to learn about only the most important Xcode tools for building simple iOS apps.
 
 # Your First Xcode Project
 
@@ -90,11 +90,11 @@ Xcode is broken down 4 main areas + a toolbar:
 
 Here's a quick breakdown of each of the areas above:
 
-1. Toolbar (Green): displays key information about project, expand/collapse other areas, run project
-1. Navigator (Orange): find files, search in your project, manage source control, navigate errors
-1. Editor Area (Red): write code, build UI with storyboard, change project settings
-1. Utilities (Purple): gives info about files, set properties of items in Interface Builder
-1. Debug Area (Blue): test and debug your code at runtime
+1. **Toolbar (Green):** displays key information about project, expand/collapse other areas, run project
+1. **Navigator (Orange):** find files, search in your project, manage source control, navigate errors
+1. **Editor Area (Red):** write code, build UI with storyboard, change project settings
+1. **Utilities (Purple):** gives info about files, set properties of items in Interface Builder
+1. **Debug Area (Blue):** test and debug your code at runtime
 
 Each area has many more tools and features built-in, so don't think of the summary above as a comprehensive list. We've just highlighted the key functions of each part of Xcode.
 

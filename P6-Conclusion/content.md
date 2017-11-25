@@ -37,11 +37,6 @@ Coming up with new ideas for apps can be hard. To help out, you're going to crea
 
 Try completing this challenge on your own. Refer back to the tutorial only when you get stuck.
 
-> [info]
-**Pitching That**
->
-Another fun way to make use of this app (when you're done) is by practicing your pitching skills with friends. Take turns generating startup ideas with your app and pretend to give a 1 minute pitch to your friends. Your friends can act as investors. At the end of each round, everyone can decide who got funding and who didn't.
-
 ## App Design
 
 ![Startup Idea Generator Design](assets/startup_generator_design.png)
@@ -67,5 +62,10 @@ The second label will be also set from an array of strings. This time, the array
 ```
 
 Your app will generate new startup idea whenever the user taps the generate button or shakes the phone.
+
+> [info]
+**Pitch That**
+>
+Another fun way to make use of this app (when you're done) is by practicing your pitching skills with friends. Take turns generating startup ideas with your app and pretend to give a 1 minute pitch to your friends. Your friends can act as investors. At the end of each round, everyone can decide who got funding and who didn't.
 
 Good luck the challenge! Remember, you can look back on the tutorial or your previous code if you get stuck.

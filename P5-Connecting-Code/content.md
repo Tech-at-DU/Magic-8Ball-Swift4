@@ -39,7 +39,7 @@ You can use these buttons to toggle between hiding and displaying the _Navigator
 > [action]
 Close the _Navigator_ pane by clicking on the first of the buttons. Keep the _Utilities area_ open as we'll need it soon.
 >
-![Hide Navigator](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/hide_navigator.mp4)
+![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/hide_navigator.mp4)
 
 When working with the _Assistant Editor_, it's often helpful to hide areas of Xcode that we aren't using to free up more screen space.
 
@@ -80,19 +80,19 @@ With our `Main.storyboard` and `ViewController.swift` files open side by side, l
 > [action]
 Create an IBOutlet for your answer label.
 >
-Select the answer label in _Interface Builder_. Next hold down control and drag into your `ViewController.swift` file. ![Answer Label IBOutlet](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/answer_label_iboutlet.mp4)
+Select the answer label in _Interface Builder_. Next hold down control and click-drag from your storyboard label into your `ViewController.swift` file. In the resulting prompt, name your new IBOutlet `answerLabel`. ![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/answer_label_iboutlet.mp4)
 
 Repeat the same process for the _shake button_.
 
 > [challenge]
-Create a new IBOutlet called `shakeButton` in your `ViewController.swift` file.
+Create a new IBOutlet called `shakeButton` for your storyboard button in your `ViewController.swift` file.
 
 <!-- break -->
 
 > [solution]
-Select the shake button in _Interface Builder_. Then hold down the control button and drag into your `ViewController.swift` file.
+Select the shake button in _Interface Builder_. Then hold down the control button and click-drag from the storyboard button into your `ViewController.swift` file.
 >
-![Button IBOutlet](assets/button_iboutlet.png)
+![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/button_iboutlet.mp4)
 
 We've created both IBOutlets so that we can reference and access our label and button in our `ViewController.swift` file.
 
@@ -100,21 +100,21 @@ Next, we'll look at responding when a user taps the _shake button_ using a IBAct
 
 # IBAction
 
-An IBAction is a method that is call when the user interacts with a storyboard object. Creating an IBAction is very similar to creating an IBOutlet.
+An IBAction is a method that is called when the user interacts with a UI object. Creating an IBAction is very similar to creating an IBOutlet.
 
 Let's create an IBAction for when a user taps on the _shake button_.
 
 > [action]
-Create a IBAction from your _shake button_ in your view controller source file.
+Create a IBAction from your _shake button_ in your view controller source file: ![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/button_ibaction.mp4)
+>
+Step-by-step:
 >
 1. Select the _shake button_.
-1. Hold the control button and drag into your view controller source file as if you were to create a IBOutlet.
+1. Hold the control and click-drag from the storyboard button into your view controller source file as if you were to create a IBOutlet.
 1. When prompted to name your IBOutlet, change the connection type from `Outlet` to `Action` using the dropdown menu.
 1. Name the IBAction, `shakeButtonTapped`.
->
-![Button IBAction](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/button_ibaction.mp4)
 
-You'll notice it creates a function within your view controller. Whenever the _shake button_ is tapped, this function will be called.
+You'll notice this creates a new function within your view controller. Whenever the _shake button_ is tapped, this function will be called.
 
 To see this in action, let's print some text in the debug console each time the _shake button_ is tapped.
 
@@ -168,7 +168,10 @@ With our new knowledge of handling button interactions and changing the label te
 
 # Implementing Our Logic
 
-We now have all the tools of implementing our Magic 8-Ball. First, let's close the _Assistant Editor_ and return to the _Standard Editor_. Use the _Project navigator_ to display `ViewController.swift` in the _Standard Editor_.
+We now have all the tools of implementing our Magic 8-Ball. First, let's close the _Assistant Editor_ and return to the _Standard Editor_.
+
+> [action]
+Use the _Project navigator_ to display `ViewController.swift` in the _Standard Editor_.
 
 Next, let's implement our logic. First, we'll add an instance variable that is an array of strings containing all possible answers of our Magic 8-Ball. Feel free to add in some of your own!
 
@@ -188,11 +191,15 @@ class ViewController: UIViewController {
     // ... rest of code
 }
 ```
+>
+For your convenience, here's a the plain text version of the answers array code above:
+>
+let answers = ["Yes, definitely", "It is certain", "Without a doubt", "Yes", "Most likely", "Sure, why not?", "Same", "Tell me more", "Out to lunch", "Reply hazy, try again", "Ask again later", "The cake is a lie", "42", "TMI", "Very doubtful", "Don't count on it", "My reply is no", "Absolutely not"]
 
 With our new array of answers, we can randomly select an item in our array whenever the shake button is tapped and change the text of the answer label to display it.
 
 > [action]
-We can use `arc4random_uniform(_:)` method to randomly choose an answer and implement our Magic 8-Ball logic. Change `shakeButtonTapped` in our view controller to the following:
+To randomly choose an answer, we can use the `arc4random_uniform(_:)` method. Change `shakeButtonTapped` in our view controller to the following:
 >
 ```
 @IBAction func shakeButtonTapped(_ sender: UIButton) {
@@ -205,9 +212,9 @@ We can use `arc4random_uniform(_:)` method to randomly choose an answer and impl
     answerLabel.text = answers[randomIndex]
 }
 ```
-
+>
 Let's break down our code step by step above:
-
+>
 1. We determine the `maxIndex` that will be used to specify the upper bound when we randomly generate an index in our answers array. We have to cast to of type `UInt32` because the method `arc4random_uniform` accepts a argument of type `UInt32`.
 1. We use `arc4random_uniform` to randomly generate a index of an answer. We cast it back to of type `Int` because we'll need an integer in order to retrieve the item in our array at the specified index.
 1. Last, we set the answer's label text to match the randomly generated answer.
@@ -239,8 +246,8 @@ override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
     answerLabel.text = answers[randomIndex]
 }
 ```
-
-As you can see, we override the `motionEnded(_:with:)` event and check for the `.motionShake` event. If triggered, we run the logic to randomly select and display an answer.
+>
+As you can see, we override the `motionEnded(_:with:)` event and check for the `.motionShake` event. If triggered, we run the same logic to randomly select and display an answer.
 
 # Keeping Things DRY
 
@@ -280,7 +287,9 @@ override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
 }
 ```
 
-Run your app and test out your new Magic 8-Ball. Be sure to text both your new shake gesture and the existing button tap logic to see that they work. To test the shake gesture in the iPhone 7 simulator, make sure the simulator is active and select the hardware menu. In the dropdown, you will see an option for `Shake Gesture`.
+Run your app and test out your new Magic 8-Ball. Be sure to test both your new shake gesture and the existing button tap logic.
+
+To test the shake gesture in the iPhone 7 simulator, make sure the simulator is active and select the hardware menu. In the dropdown, you will see an option for `Shake Gesture`.
 
 ![Simulator Shake](assets/simulator_shake.png)
 
