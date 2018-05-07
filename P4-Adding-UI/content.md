@@ -12,7 +12,7 @@ In this section, we'll build the UI for our Magic 8-Ball.
 >
 User interface, commonly referred to as UI, are any elements that your app will display on screen to a user. This includes visual elements like text and images as well as interactive elements like buttons, sliders and tabs. In programming, it's also common to refer to UI as your _views_.
 
-# Introducing View Controllers
+## Introducing View Controllers
 
 If you're planning to build iOS apps, you'll need to learn about the `UIViewController`. View controllers are one of the fundamental building blocks of iOS development.
 
@@ -47,7 +47,7 @@ Each of the highlighted areas is important to building your UI in your Main stor
 - Utilities Area (Purple): configure properties, size, and other details of your storyboard elements
 - Object Library (Pink): displays a list of all Apple's pre-built UI components you can use in storyboard
 
-Let's add our Magic 8-Ball _Shake_ button to our view controller.
+Let's add our Magic 8-Ball _Shake It!_ button to our view controller.
 
 > [action]
 ![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/04-adding-ui/add_button_to_vc.mp4)
@@ -71,6 +71,7 @@ Each inspectors allows you to configure different details and attributes about t
 First we'll look at the _Attributes Inspector_ which changes the attributes of a selected storyboard object. We can use this to change the title of our button.
 
 > [action]
+>
 1. Make sure you click on the button and that it's actively selected. Remember the _Utilities_ pane is contextual so it will change based on what is selected. ![Select Button](assets/select_button.png)
 1. Next, navigate to the _Attributes Inspector_ tab in the _Utilities area_. It is the 4th icon from the left. ![Open Attributes Inspector](assets/attributes_inspector.png)
 1. Last, find the title field and change it from the default text `Button` to `Shake It!`. ![Set Button Title](assets/set_btn_title.png)
@@ -120,6 +121,7 @@ From the _Object Library_ find the label and drag it onto center of the view con
 Next, we'll change the size and attributes of our label.
 
 > [action]
+>
 1. Select the label and open the _Attributes Inspector_ in the _Utilities area_. ![Label Attributes](assets/label_attributes.png)
 1. Change the `Text` attribute from the default `Label` placeholder to `Have a question?`. This will be the new default text that the app starts with every time the app is opened. ![Change Label Text](assets/change_label_text.png)
 1. Resize the label so that it fits the new text. ![Resize Label](assets/resize_label.png)
