@@ -20,7 +20,7 @@ _shakes 8-ball_
 
 Pretty useful huh? When you're finished with the tutorial, you'll be able to use your new Magic 8-Ball app to make all of life's important decisions!
 
-# Who Is This For?
+## Who Is This For?
 
 Beginners (little to no previous iOS experience) who want to get started by building their first iOS app.
 
@@ -40,19 +40,19 @@ We'll start our journey into iOS by building a simple Magic 8-Ball app.
 
 You can see the app's flow in the designs above.
 
-1. The user will open the app from our app icon
-2. The user is then presented with a prompt to think of a question to ask the Magic 8-Ball
-3. Finally, the user can either tap the **Shake** button or rage-shake their phone for an answer.
+1. The user will open the app from our app icon.
+2. The user is then presented with a prompt to think of a question to ask the Magic 8-Ball.
+3. Finally, the user can either tap the **Shake It!** button or rage-shake their phone for an answer.
 
-# What You'll Learn
+## What You'll Learn
 
 By the end of this tutorial, you will:
 
-- create a new Xcode project
-- add an app icon to your app
-- navigate and become familiar with Xcode
-- build a really, **really** simple UI
-- write code that randomly generates an answer
+- Create a new Xcode project
+- Add an app icon to your app
+- Navigate and become familiar with Xcode
+- Build a really, **really** simple UI
+- Write code that randomly generates an answer
 
 # Important: Read Me!
 
@@ -62,12 +62,14 @@ To succeed as an iOS developer and build awesome apps, you'll need to know more 
 
 As you go through the tutorial, pay attention when learning to use Xcode. Xcode will be your bread and butter. The more fluent you are with it, the easier it'll be to build beautiful, well-executed apps.
 
-Most importantly, make sure you're having fun. Building iOS apps is challenging, but also extremely rewarding. There's no feeling like watching your own apps come to life and feeling the pride from knowing you built it yourself!
+Most importantly, relax and have some fun with it. Building iOS apps is challenging, but also extremely rewarding. There's no feeling like watching your own apps come to life and feeling the pride from knowing you built it yourself!
 
-# If You Get Stuck
+## If You Get Stuck
 
-"Sometimes, magic is just someone spending more time on something than anyone else might reasonably expect." - Teller (Penn & Teller)
+> "Sometimes, magic is just someone spending more time on something than anyone else might reasonably expect."
+>
+> \- Teller (Penn & Teller)
 
-Getting stuck when coding (and debugging) is a natural part of the programming process. If you find yourself stuck on a problem or lost, pause for a moment and take a breath. Maybe take a walk. Then retrace your steps (in the tutorial, not the walk.) Make sure you've follow each step of the tutorial. It's easy to make typos or to accidentally skip over important steps.
+Getting stuck when coding (and debugging) is a natural part of the development process. If you find yourself stuck on a problem or lost, pause for a moment and take a breath. Maybe take a walk. Then retrace your steps (in the tutorial, not the walk). Make sure you've follow each step of the tutorial. It's easy to make typos or to accidentally skip over important steps.
 
 If you want to compare your code to the solution, you can find it [here](https://github.com/MakeSchool-Tutorials/Magic-8Ball-Swift4-Solution).
