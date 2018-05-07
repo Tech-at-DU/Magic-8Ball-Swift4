@@ -9,7 +9,7 @@ That's because our app won't do anything if we don't write any code. You can thi
 
 In the example of responding to a button tap, we'll need to write code to tell the app what to do when a user taps the _shake button_.
 
-# How Is It Connected?
+## How Is It Connected?
 
 One of the most biggest sticking points for beginners is understanding how your code is connected to storyboard. Xcode connects your storyboard to Swift code by using a combination of the _Identity Inspector_, _IBOutlets_ and _IBActions_.
 
@@ -66,9 +66,9 @@ We don't need to set this up for this project because the _Single View App_ temp
 
 In our storyboard view controller, we previously added a label and a button. To implement our logic (the instructions for our Magic 8-Ball), we need some way to reference our label and button.
 
-To solve this problem, we'll need to create IBOutlets.
+To solve this problem, we'll need to create _IBOutlets_.
 
-IBOutlets create a connection from our storyboard subview objects (like labels, buttons, image views) to our Swift code. The allow us to reference that we can manipulate programmatically.
+_IBOutlets_ create a connection from our storyboard subview objects (like labels, buttons, image views) to our Swift code. The allow us to reference that we can manipulate programmatically.
 
 > [action]
 First to create some more screen space, let's close the _Utilities_ pane using the toolbar. Your Xcode IDE should look like the following:
@@ -80,7 +80,7 @@ With our `Main.storyboard` and `ViewController.swift` files open side by side, l
 > [action]
 Create an IBOutlet for your answer label.
 >
-Select the answer label in _Interface Builder_. Next hold down control and click-drag from your storyboard label into your `ViewController.swift` file. In the resulting prompt, name your new IBOutlet `answerLabel`. ![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/answer_label_iboutlet.mp4)
+Select the answer label in _Interface Builder_. Next hold down control (`⌃`) and click-drag from your storyboard label into your `ViewController.swift` file. In the resulting prompt, name your new IBOutlet `answerLabel`. ![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/answer_label_iboutlet.mp4)
 
 Repeat the same process for the _shake button_.
 
@@ -90,7 +90,7 @@ Create a new IBOutlet called `shakeButton` for your storyboard button in your `V
 <!-- break -->
 
 > [solution]
-Select the shake button in _Interface Builder_. Then hold down the control button and click-drag from the storyboard button into your `ViewController.swift` file.
+Select the shake button in _Interface Builder_. Then hold down the control button (`⌃`) and click-drag from the storyboard button into your `ViewController.swift` file. Name your new IBOutlet `shakeButton`.
 >
 ![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/button_iboutlet.mp4)
 
@@ -129,7 +129,7 @@ In your `ViewController.swift`, modify `shakeButtonTapped(_:)` to the following:
 >
 ```
 @IBAction func shakeButtonTapped(_ sender: Any) {
-    print("shake it like a polaroid picture!")
+    print("Shake it like a polaroid picture!")
 }
 ```
 
@@ -150,7 +150,7 @@ In `ViewController.swift`, add the following line of code to `shakeButtonTapped(
 >
 ```
 @IBAction func shakeButtonTapped(_ sender: Any) {
-    print("shake it like a polaroid picture!")
+    print("Shake it like a polaroid picture!")
 >
     answerLabel.text = "button was tapped"
 }
@@ -160,11 +160,11 @@ Build and run the app again. Tap the _shake button_ and you should see the answe
 
 ![Changed Text](assets/changed_text.png)
 
-Here's what we did:
+*Here's what we did:*
 
 Each `UILabel` has a text attribute that can be changed and updated. This will also update the UI on the screen. When `shakeButtonTapped(_:)` was called, we set the text property of our label to a new string.
 
-With our new knowledge of handling button interactions and changing the label text, we now can implement our logic of randomly selecting displaying a magic 8 ball answer.
+With our new knowledge of handling button interactions and changing the label text, we now can implement our logic of randomly selecting displaying a Magic 8-Ball answer.
 
 # Implementing Our Logic
 
@@ -219,9 +219,7 @@ Let's break down our code step by step above:
 1. We use `arc4random_uniform` to randomly generate a index of an answer. We cast it back to of type `Int` because we'll need an integer in order to retrieve the item in our array at the specified index.
 1. Last, we set the answer's label text to match the randomly generated answer.
 
-Build and run the app!
-
-Ask the Magic 8-Ball a couple questions and test that it works.
+Build and run the app! Ask the Magic 8-Ball a couple questions and test that it works...
 
 Congrats, we've implemented the basic Magic 8-Ball functionality.
 
@@ -289,7 +287,7 @@ override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
 
 Run your app and test out your new Magic 8-Ball. Be sure to test both your new shake gesture and the existing button tap logic.
 
-To test the shake gesture in the iPhone 7 simulator, make sure the simulator is active and select the hardware menu. In the dropdown, you will see an option for `Shake Gesture`.
+To test the shake gesture in the iPhone simulator, make sure the simulator is active and select the hardware menu. In the dropdown, you will see an option for `Shake Gesture`.
 
 ![Simulator Shake](assets/simulator_shake.png)
 

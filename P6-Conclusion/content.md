@@ -11,11 +11,11 @@ You taken your first steps on your journey to become an iOS developer.
 
 In this tutorial, you were introduced to many new concepts in Xcode and iOS development. To recap, you learned how to...
 
-- create new Xcode projects
-- use different tools of Xcode
-- build simple user interfaces (UI) using _Interface Builder_
-- connect storyboard to code with the _Identity Inspector_, IBOutlets and IBActions
-- implement app logic for your Magic 8-Ball
+- Create new Xcode projects
+- Use different tools in Xcode
+- Build simple user interfaces (UI) using _Interface Builder_
+- Connect storyboard to code with the _Identity Inspector_, IBOutlets and IBActions
+- Implement app logic for your Magic 8-Ball
 
 Try to remember and visualize what you did for each of these steps in your head.
 
