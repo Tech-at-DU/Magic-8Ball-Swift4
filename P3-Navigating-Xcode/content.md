@@ -7,7 +7,7 @@ Let's take a look around our newly created Xcode project. All of the files and s
 
 To see what's in our project and navigate file to file, we'll need to using the _Navigator_.
 
-# Navigator
+## Navigator
 
 ![Xcode Navigator](assets/navigator_pane.png)
 
@@ -19,9 +19,9 @@ You can change tabs by clicking on the different icons at the very top of the na
 
 Each of these navigator tabs are useful tools that you'll eventually learn to use. Some of the most important ones are:
 
-- _Project navigator_: navigate and change files
-- _Find navigator_: search through your project to find files
-- _Issue navigator_: locate and fix warnings and errors in your project
+- _Project navigator (folder icon)_: navigate and change files
+- _Find navigator (magnifying glass icon)_: search through your project to find files
+- _Issue navigator (warning sign icon)_: locate and fix warnings and errors in your project
 
 In this tutorial, we'll only focus on the first tab, the _Project navigator_, but you'll learn about all of them eventually.
 
@@ -32,7 +32,7 @@ In this tutorial, we'll only focus on the first tab, the _Project navigator_, bu
 The project navigator helps you navigate and organize your project files. In other words, it makes it easier to find and open different files in the same project.
 
 > [action]
-In your Navigator pane, make sure you have the project navigator tab active. If you don't, click on the first navigator tab. It has an icon that looks like a file. ![Project Navigator Tab](assets/project_navigator_tab.png)
+In your Navigator pane, make sure you have the project navigator tab active. If you don't, click on the first navigator tab. It has an icon that looks like a folder. ![Project Navigator Tab](assets/project_navigator_tab.png)
 
 With your Project navigator tab active, you should see your project's files right below the Navigator tabs:
 
@@ -50,14 +50,14 @@ In the navigator, select the Xcode project file at the very top of the project n
 <!-- break -->
 
 > [info]
-You'll notice, whenever you choose a file in the _Project navigator_, the _Editor area_ will update with the corresponding file. In addition, the _Utilities area_ will also change to match the options available for the active file. Switch back and forth between a couple files if you want to test it out.
+You'll notice, whenever you choose a file in the _Project navigator_, the _Editor area_ will update with the corresponding file. In addition, the _Utilities area_ will also change to match the options available for the active file. Switch back and forth between a couple files if you want to test it out (using a single click NOT double click).
 
 In the project details, you can configure your app's settings. For example, let's go through the process of changing the app's name that is displayed on the home screen of a user's iPhone.
 
 > [action]
 To get a better idea of what we're changing, run the app on the iPhone 7 simulator. You'll see the blank white screen as you saw earlier.
 >
-Next, press command-shift-h. This will take you to the home screen of your iPhone 7 simulator.
+Next, press command-shift-h (`⇧⌘H`). This will take you to the home screen of your iPhone 7 simulator.
 >
 ![Home App Display](assets/home_app_display.png)
 
@@ -84,9 +84,9 @@ Files with the `.swift` extension are Swift source files. The code you write wil
 
 The _App Delegate_ is an important object that is responsible for handling your app lifecycle. If you look at the some of the method names in the file, you'll see names like:
 
-- application(_:didFinishLaunchingWithOptions:)
-- applicationWillResignActive(_:)
-- applicationWillTerminate(_:)
+- `application(_:didFinishLaunchingWithOptions:)`
+- `applicationWillResignActive(_:)`
+- `applicationWillTerminate(_:)`
 
 As you can guess, all of these methods happen when your app changes _state_ such as when your app first launches, when it's put into the background, or when it's terminated. Although we won't add anything in here for this tutorial, you can add code here to customize your app behavior when important app lifecycle events happen.
 
@@ -106,7 +106,7 @@ If you're wondering why there are so many empty app icon placeholders, it's to s
 For our Magic 8-Ball app, we'll only add the app icon images to be displayed on the home screen. When you're really submitting your app to the App Store, you'll need to make sure to account for all the relevant app icon sizes.
 
 > [action]
-Go ahead and download the Magic 8-Ball app icon images by [clicking here](https://www.dropbox.com/s/cs880nu9xi0qlq6/magic_app_icon.zip?dl=1). After downloading and unzipping your image assets, drag and drop the `app_icon@2x.png` into `iPhone App iOS 7-11 60pt` @2x empty placeholder. Repeat and do the same for `app_icon@3x.png`.
+Go ahead and download the Magic 8-Ball app icon images by [clicking here](https://www.dropbox.com/s/cs880nu9xi0qlq6/magic_app_icon.zip?dl=1). After downloading and unzipping your image assets, drag and drop the `app_icon@2x.png` into `iPhone App iOS 7-11 60pt 2x` empty placeholder. Repeat and do the same for `app_icon@3x.png` with `iPhone App iOS 7-11 60pt 3x`.
 
 When you're finished, your _AppIcon_ image set should look like the following:
 
@@ -122,6 +122,6 @@ After adding your Magic 8-Ball app icon, you'll notice some new warnings appear.
 To make sure our changes have worked, let's run the app. Remember, we haven't changed what the app does, so when we run the app it'll still be a blank, empty white screen.
 
 > [action]
-Run the app by pressing the Run button in the toolbar or the CMD-r shortcut. With the app active in the simulator, press command-shift-h. You should see the simulator return to the iPhone homescreen with your new app icon and display name!
+Run the app by pressing the Run button in the toolbar or the `⌘R` shortcut. With the app active in the simulator, press command-shift-h (`⇧⌘H`). You should see the simulator return to the iPhone home screen with your new app icon and display name!
 >
 ![Home Screen Styled](assets/home_screen_styled.png)
