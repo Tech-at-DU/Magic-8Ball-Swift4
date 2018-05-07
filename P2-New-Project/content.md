@@ -98,7 +98,7 @@ Here's a quick breakdown of each of the areas above:
 
 Each area has many more tools and features built-in, so don't think of the summary above as a comprehensive list. We've just highlighted the key functions of each part of Xcode.
 
-# The Toolbar
+## The Toolbar
 
 The Xcode toolbar provides easy access to information and buttons that you'll use often. You can see it at the very top of your Xcode IDE: ![Xcode Toolbar](assets/xcode_toolbar.png)
 
@@ -174,7 +174,7 @@ With our simulator set, we can move on to build and run our project.
 If you haven't guessed already, the _Run_ button will build and run your active scheme on the selected device. Since we selected the _iPhone 7_ simulator in the previous step, our app will run on the iPhone 7 simulator.
 
 > [action]
-Click the _Run_ button now and watch Xcode build and run your empty project. In the future, you can also use the keyboard shortcut command-r (CMD-r) to run your project.
+Click the _Run_ button now and watch Xcode build and run your empty project. In the future, you can also use the keyboard shortcut command-r (`⌘R`) to run your project.
 
 <!-- break -->
 
@@ -196,11 +196,11 @@ If you're wondering why there's just a blank white screen, it's because we haven
 The _Stop_ button (looks like a square) will stop the instance of your app if it's currently running.
 
 > [action]
-Click the _Stop_ button to terminate the running instance of your app on the simulator. For future reference, the keyboard shortcut command-. (CMD-.) will stop your app.
+Click the _Stop_ button to terminate the running instance of your app on the simulator. For future reference, the keyboard shortcut command-. `⌘.` will stop your app.
 
 You'll see that the simulator will stop running your app.
 
-# Progress So Far
+## Progress So Far
 
 At this point, you've created your first Xcode project and run the empty new project in the simulator. As we move forward, we'll keep running our app on the simulator to check that our project is working as expected.
 
