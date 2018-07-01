@@ -142,9 +142,9 @@ These buttons and controls allow you to _build_ and run your app on either a sim
 > [info]
 **What is the build process?**
 >
-The build process, also referred to as building, is the series of tasks that must be completed in order to turn your code into an app that can be run on a device (or simulator.)
+The build process, also referred to as building, is the series of tasks that must be completed in order to turn your code into an app that can be run on a device (or simulator).
 >
-One of these tasks is _compiling_ your code. This means that the compiler turns your Swift code into machine-code (instructions that your computers can read.) During this process, the compiler may find errors with your code. If it does, the build process will fail and Xcode will display the errors in the status bar as shown previously.
+One of these tasks is _compiling_ your code. This means that the compiler turns your Swift code into machine-code (instructions that your computers can read). During this process, the compiler may find errors with your code. If it does, the build process will fail and Xcode will display the errors in the status bar as shown previously.
 
 ## Scheme Dropdown
 
@@ -181,7 +181,7 @@ Click the _Run_ button now and watch Xcode build and run your empty project. In 
 > [info]
 The first time you run your app, you may see a dialog that asks for your password: ![Debug Permission](assets/debug_dialog.png)
 >
-Enter and click `Continue`. This permission is necessary to run your app using the _debugger_ (more on this later.)
+Enter and click `Continue`. This permission is necessary to run your app using the _debugger_ (more on this later).
 
 If all goes well, you'll see a simulator with your app launch:
 

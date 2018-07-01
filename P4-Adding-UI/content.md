@@ -86,7 +86,7 @@ We'll fix this next using the _Size Inspector_.
 
 Right now our shake button is squished because the new title text is longer than the width of the button. To fix that we'll change the _frame_ of the button.
 
-The _frame_ of an object refers to a object's X and Y position and it's size (height and width.)
+The _frame_ of an object refers to a object's X and Y position and it's size (height and width).
 
 We can view our current skip button's frame in the _Size Inspector_.
 
