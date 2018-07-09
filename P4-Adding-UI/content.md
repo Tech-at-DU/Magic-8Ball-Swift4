@@ -16,7 +16,7 @@ User interface, commonly referred to as UI, are any elements that your app will 
 
 If you're planning to build iOS apps, you'll need to learn about the `UIViewController`. View controllers are one of the fundamental building blocks of iOS development.
 
-The `UIViewController` is a class that is responsible for _controlling_ it's set of _views_. Each view controller has a root view that acts as a canvas to place other subviews.
+The `UIViewController` is a class that is responsible for _controlling_ its set of _views_. Each view controller has a root view that acts as a canvas to place other subviews.
 
 <!-- can consider adding jump to definition here for UIViewController view property -->
 
