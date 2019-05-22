@@ -199,7 +199,7 @@ let answers = ["Yes, definitely", "It is certain", "Without a doubt", "Yes", "Mo
 With our new array of answers, we can randomly select an item in our array whenever the shake button is tapped and change the text of the answer label to display it.
 
 > [action]
-To randomly choose an answer, we can use the `arc4random_uniform(_:)` method. Change `shakeButtonTapped` in our view controller to the following:
+To randomly choose an answer, we can use the `Int.random(in:)` method. Change `shakeButtonTapped` in our view controller to the following:
 >
 ```
 @IBAction func shakeButtonTapped(_ sender: UIButton) {
@@ -235,8 +235,7 @@ Add the following method to your view controller:
 override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
     guard motion == .motionShake else { return }
 >
-    let maxIndex = UInt32(answers.count)
-    let randomIndex = Int(arc4random_uniform(maxIndex))
+    let randomIndex = Int.random(in: 0..<answers.count)
 >
     answerLabel.text = answers[randomIndex]
 }
@@ -258,8 +257,7 @@ In `ViewController.swift` add the following method:
 >
 ```
 func generateAnswer() {
-    let maxIndex = UInt32(answers.count)
-    let randomIndex = Int(arc4random_uniform(maxIndex))
+    let randomIndex = Int.random(in: 0..<answers.count)
 >
     answerLabel.text = answers[randomIndex]
 }
