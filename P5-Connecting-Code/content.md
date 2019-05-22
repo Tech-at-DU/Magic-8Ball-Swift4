@@ -204,19 +204,16 @@ To randomly choose an answer, we can use the `arc4random_uniform(_:)` method. Ch
 ```
 @IBAction func shakeButtonTapped(_ sender: UIButton) {
     // 1
-    let maxIndex = UInt32(answers.count)
-    // 2
-    let randomIndex = Int(arc4random_uniform(maxIndex))
+    let randomIndex = Int.random(in: 0..<answers.count)
 >
-    // 3
+    // 2
     answerLabel.text = answers[randomIndex]
 }
 ```
 >
 Let's break down our code step by step above:
 >
-1. We determine the `maxIndex` that will be used to specify the upper bound when we randomly generate an index in our answers array. We have to cast to of type `UInt32` because the method `arc4random_uniform` accepts a argument of type `UInt32`.
-1. We use `arc4random_uniform` to randomly generate a index of an answer. We cast it back to of type `Int` because we'll need an integer in order to retrieve the item in our array at the specified index.
+1. We use `Int.random(in:)` to randomly generate a index of an answer (between `0` and the number of answers we have).
 1. Last, we set the answer's label text to match the randomly generated answer.
 
 Build and run the app! Ask the Magic 8-Ball a couple questions and test that it works...
