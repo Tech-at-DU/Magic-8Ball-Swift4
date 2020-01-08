@@ -15,15 +15,9 @@ One of the most biggest sticking points for beginners is understanding how your 
 
 In order to see this, we'll first need to learn about the _Assistant Editor_.
 
-On the right side of your toolbar, there are two groups of 3 buttons that you can toggle. We'll focus on the first group on the left first.
+On the right side of your addressbar, there is a button you can click to activate the _Assistant Editor_. 
 
-![Editor Modes](assets/editor_modes.png)
-
-The three buttons highlighted above allow you to toggle your editor mode. Only one of these modes can be active at a time.
-
-As you can see, the first button, or the _Standard Editor_, is already active. That's because we've already been using the _Standard Editor_ this whole time. The _Standard Editor_ doesn't do anything fancy. It simply gives you a single, large editor window to focus on a single file.
-
-The second button set the editor mode to the _Assistant Editor_. This editor mode is for opening and editing multiple files side-by-side.
+![Assistant Editor Active](assets/zYLj8.png)
 
 > [action]
 If you haven't already, toggle the button from the _Standard Editor_ to the _Assistant Editor_. You should see the following:
