@@ -47,12 +47,12 @@ Each of the highlighted areas is important to building your UI in your Main stor
 - Utilities Area (Purple): configure properties, size, and other details of your storyboard elements
 - Object Library (Pink): displays a list of all Apple's pre-built UI components you can use in storyboard
 
-If you can't see your object library, click on the `+` button on top of your __Utilities Area__. However, I personally prefer using a shortcut to show your object library: `command` + `shift` + `L` 
+If you can't see your object library, click on the `+` button on top of your __Utilities Area__. However, I personally prefer using a shortcut to show your object library: `command` + `shift` + `L`
 
 Now let's add our Magic 8-Ball _Shake It!_ button to our view controller.
 
 > [action]
-![ms-video](assets/add_button_to_vc.mov)
+![ms-video](./assets/add_button_to_vc.mov)
 >
 Find the `Button` object in the _Object Library_ and drag and drop it onto the root view of your view controller.
 
