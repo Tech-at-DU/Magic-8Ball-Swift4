@@ -47,7 +47,9 @@ Each of the highlighted areas is important to building your UI in your Main stor
 - Utilities Area (Purple): configure properties, size, and other details of your storyboard elements
 - Object Library (Pink): displays a list of all Apple's pre-built UI components you can use in storyboard
 
-Let's add our Magic 8-Ball _Shake It!_ button to our view controller.
+If you can't see your object library, click on the `+` button on top of your __Utilities Area__. However, I personally prefer using a shortcut to show your object library: `command` + `shift` + `L` 
+
+Now let's add our Magic 8-Ball _Shake It!_ button to our view controller.
 
 > [action]
 ![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/04-adding-ui/add_button_to_vc.mp4)
@@ -73,7 +75,7 @@ First we'll look at the _Attributes Inspector_ which changes the attributes of a
 > [action]
 >
 1. Make sure you click on the button and that it's actively selected. Remember the _Utilities_ pane is contextual so it will change based on what is selected. ![Select Button](assets/select_button.png)
-1. Next, navigate to the _Attributes Inspector_ tab in the _Utilities area_. It is the 4th icon from the left. ![Open Attributes Inspector](assets/attributes_inspector.png)
+1. Next, navigate to the _Attributes Inspector_ tab in the _Utilities area_. It is the 5th icon from the left. ![Open Attributes Inspector](assets/attributes_inspector.png)
 1. Last, find the title field and change it from the default text `Button` to `Shake It!`. ![Set Button Title](assets/set_btn_title.png)
 
 You should now see a squished button with the `Shake It!` title.
@@ -131,7 +133,7 @@ Next, we'll change the size and attributes of our label.
 We've just finished setting up the UI for our app. Let's take a second to build and run to see our progress.
 
 > [action]
-Build and run your app on the iPhone 7 simulator. You'll see the following:
+Build and run your app on the iPhone 8 simulator. You'll see the following:
 >
 ![Storyboard UI Finished](assets/storyboard_ui_finished.png)
 
