@@ -52,7 +52,7 @@ If you can't see your object library, click on the `+` button on top of your __U
 Now let's add our Magic 8-Ball _Shake It!_ button to our view controller.
 
 > [action]
-![ms-video](assets/add_button_to_vc.mp4)
+![ms-video](assets/add_button_to_vc.mov)
 >
 Find the `Button` object in the _Object Library_ and drag and drop it onto the root view of your view controller.
 
@@ -102,7 +102,7 @@ A simpler, but less precise way of changing our button's frame is by selecting i
 > [action]
 Change your skip button's frame to be centered and positioned along the bottom of the Interface Builder view controller.
 >
-![ms-video](assets/resize_button.mp4)
+![ms-video](assets/resize_button.mov)
 
 The positioning doesn't have to be perfect, but if you want to be more precise you can use the _Size Inspector_.
 
@@ -118,7 +118,7 @@ To complete our UI, we'll also need to add a label to display the Magic 8-Ball's
 > [action]
 From the _Object Library_ find the label and drag it onto center of the view controller's root view.
 >
-![ms-video](assets/add_label_to_vc.mp4)
+![ms-video](assets/add_label_to_vc.mov)
 
 Next, we'll change the size and attributes of our label.
 
