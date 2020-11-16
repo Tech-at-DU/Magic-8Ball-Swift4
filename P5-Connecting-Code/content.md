@@ -13,18 +13,13 @@ In the example of responding to a button tap, we'll need to write code to tell t
 
 One of the most biggest sticking points for beginners is understanding how your code is connected to storyboard. Xcode connects your storyboard to Swift code by using a combination of the _Identity Inspector_, _IBOutlets_ and _IBActions_.
 
-In order to see this, we'll first need to learn about the _Assistant Editor_.
+In order to see this, we'll first need to hold `option` and `click` the ViewController.swift file
 
 On the right side of your addressbar, there is a button you can click to activate the _Assistant Editor_. 
 
-![Assistant Editor Active](assets/zYLj8.png)
-
-> [action]
-If you haven't already, toggle the button from the _Standard Editor_ to the _Assistant Editor_. You should see the following:
->
 ![Assistant Editor Active](assets/assistant_editor_active.png)
 
-The first thing you might notice, is the lack of screen space for each open file when we use the _Assistant Editor_. We can make this better by hiding unneeded Xcode tools like the _Navigator_. You can do this by using the second group of buttons on the far right-side of the toolbar.
+The first thing you might notice, is the lack of screen space for each open file. We can make this better by hiding unneeded Xcode tools like the _Navigator_. You can do this by using the second group of buttons on the far right-side of the toolbar.
 
 ![Display Xcode Areas](assets/display_xcode_areas.png)
 
@@ -33,9 +28,7 @@ You can use these buttons to toggle between hiding and displaying the _Navigator
 > [action]
 Close the _Navigator_ pane by clicking on the first of the buttons. Keep the _Utilities area_ open as we'll need it soon.
 >
-![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/hide_navigator.mp4)
-
-When working with the _Assistant Editor_, it's often helpful to hide areas of Xcode that we aren't using to free up more screen space.
+![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/hide_navigator.mov)
 
 Now that we know how to display two different files side-by-side, we'll look at how Xcode knows to connect our storyboard view controller to our `ViewController.swift` source file.
 
