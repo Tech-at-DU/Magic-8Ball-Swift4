@@ -120,7 +120,7 @@ Notice the yellow warning icon and the red error icon on the right side of the s
 
 ## Showing / Hiding Xcode Areas
 
-You can also hide and display the _Navigator_, _Debugger_ and _Utilities_ based on which tools you're using at the moment. This can be done by toggling the buttons of the far right side of the toolbar:
+You can also hide and display the _Navigator_, _Debugger_ and _Utilities_ based on which tools you're using at the moment. This can be done by toggling the 3 buttons shown below:
 
 ![Display Xcode Areas](assets/display_xcode_areas.png)
 
@@ -131,7 +131,7 @@ If your computer doesn't have a large screen, it's often helpful to hide these a
 Let's go through the process of running our app on the simulator.
 
 > [info]
-We're specifically using the iPhone 7 simulator for convenience right now. In the future, you can use any simulator of your choice or even your own device.
+We're specifically using the iPhone 8 simulator for convenience right now. In the future, you can use any simulator of your choice or even your own device.
 
 Take a look at the group of buttons on the left-hand side. You should see:
 
@@ -152,7 +152,7 @@ One of these tasks is _compiling_ your code. This means that the compiler turns 
 
 The _Scheme_ dropdown menu will allow you to edit and manage multiple _schemes_. A _scheme_ tells Xcode **what** to build and run when you press the _Run_ button. As a beginner, you don't need to worry about dealing with multiple schemes.
 
-The second half of the scheme dropdown allows you to specific a simulator or device that you want your selected scheme to run on. For us, we want to run our app on an _iPhone 7_ simulator.
+The second half of the scheme dropdown allows you to specific a simulator or device that you want your selected scheme to run on. For us, we want to run our app on an _iPhone 8_ simulator.
 
 Click on the right-side of the _Scheme_ dropdown to see a full list of options. If you connect your iPhone to your computer, you'll see your device show up as an option as well.
 
@@ -161,9 +161,9 @@ Click on the right-side of the _Scheme_ dropdown to see a full list of options. 
 Let's change the device our scheme will run on.
 
 > [action]
-Change your scheme to build and run on the _iPhone 7_ simulator. Click on the second half of the scheme dropdown menu and select _iPhone 7_ simulator.
+Change your scheme to build and run on the _iPhone 8_ simulator. Click on the second half of the scheme dropdown menu and select _iPhone 8_ simulator.
 >
-![Select iPhone 7 Scheme](assets/iphone_7_scheme.png)
+![Select iPhone 8 Scheme](assets/iphone_8_scheme.png)
 
 With our simulator set, we can move on to build and run our project.
 
@@ -171,7 +171,7 @@ With our simulator set, we can move on to build and run our project.
 
 ![Run Button](assets/toolbar_run_btn.png)
 
-If you haven't guessed already, the _Run_ button will build and run your active scheme on the selected device. Since we selected the _iPhone 7_ simulator in the previous step, our app will run on the iPhone 7 simulator.
+If you haven't guessed already, the _Run_ button will build and run your active scheme on the selected device. Since we selected the _iPhone 8_ simulator in the previous step, our app will run on the iPhone 8 simulator.
 
 > [action]
 Click the _Run_ button now and watch Xcode build and run your empty project. In the future, you can also use the keyboard shortcut command-r (`⌘R`) to run your project.
