@@ -28,7 +28,7 @@ You can use these buttons to toggle between hiding and displaying the _Navigator
 > [action]
 Close the _Navigator_ pane by clicking on the first of the buttons. Keep the _Utilities area_ open as we'll need it soon.
 >
-![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/hide_navigator.mov)
+![ms-video](assets/hide_navigator.mov)
 
 Now that we know how to display two different files side-by-side, we'll look at how Xcode knows to connect our storyboard view controller to our `ViewController.swift` source file.
 
@@ -67,7 +67,7 @@ With our `Main.storyboard` and `ViewController.swift` files open side by side, l
 > [action]
 Create an IBOutlet for your answer label.
 >
-Select the answer label in _Interface Builder_. Next hold down control (`⌃`) and click-drag from your storyboard label into your `ViewController.swift` file. In the resulting prompt, name your new IBOutlet `answerLabel`. ![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/answer_label_iboutlet.mp4)
+Select the answer label in _Interface Builder_. Next hold down control (`⌃`) and click-drag from your storyboard label into your `ViewController.swift` file. In the resulting prompt, name your new IBOutlet `answerLabel`. ![ms-video](assets/answer_label_iboutlet.mov)
 
 Repeat the same process for the _shake button_.
 
@@ -79,7 +79,7 @@ Create a new IBOutlet called `shakeButton` for your storyboard button in your `V
 > [solution]
 Select the shake button in _Interface Builder_. Then hold down the control button (`⌃`) and click-drag from the storyboard button into your `ViewController.swift` file. Name your new IBOutlet `shakeButton`.
 >
-![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/button_iboutlet.mp4)
+![ms-video](assets/button_iboutlet.mov)
 
 We've created both IBOutlets so that we can reference and access our label and button in our `ViewController.swift` file.
 
@@ -92,7 +92,7 @@ An IBAction is a method that is called when the user interacts with a UI object.
 Let's create an IBAction for when a user taps on the _shake button_.
 
 > [action]
-Create a IBAction from your _shake button_ in your view controller source file: ![ms-video](https://s3.amazonaws.com/mgwu-misc/Magic+8+Ball/05-connecting-code/button_ibaction.mp4)
+Create a IBAction from your _shake button_ in your view controller source file: ![ms-video](assets/button_ibaction.mov)
 >
 Step-by-step:
 >
