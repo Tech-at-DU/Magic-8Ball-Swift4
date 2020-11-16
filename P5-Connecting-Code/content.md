@@ -60,7 +60,7 @@ _IBOutlets_ create a connection from our storyboard subview objects (like labels
 > [action]
 First to create some more screen space, let's close the _Utilities_ pane using the toolbar. Your Xcode IDE should look like the following:
 >
-![Assistant Editor Active](assets/assistant_editor_active_2.png)
+![Assistant Editor Active](assets/assistant_editor_active.png)
 
 With our `Main.storyboard` and `ViewController.swift` files open side by side, let's create our first IBOutlet.
 
