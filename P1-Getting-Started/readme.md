@@ -1,8 +1,3 @@
----
-title: "Intro to Magic 8-Ball"
-slug: intro-magic8
----
-
 Welcome to the first of the Make School's iOS app tutorials series! This tutorial introduces you to the basics of building iOS apps by building your first app: a Magic 8-Ball!
 
 ## What's A Magic 8-Ball?
