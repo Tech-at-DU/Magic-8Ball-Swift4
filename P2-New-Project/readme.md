@@ -1,8 +1,3 @@
----
-title: "Creating Your First Xcode Project"
-slug: new-xcode-project
----
-
 Most of this tutorial will be devoted towards learning about Xcode. In this section, we'll have our first introduction to Xcode and go through the process of creating a new Xcode project for our app.
 
 ## What is Xcode?
