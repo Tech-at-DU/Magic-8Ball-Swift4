@@ -5,3 +5,4 @@
 - [Navigating-Xcode](P3-Navigating-Xcode)
 - [Adding-UI](P4-Adding-UI)
 - [Connecting-Code](P5-Connecting-Code)
+- [Conclusion](P6-Conclusion)
