@@ -1,8 +1,3 @@
----
-title: "Conclusion"
-slug: conclusion
----
-
 Congrats! You've just built your first iOS app.
 
 ![Finished App](assets/finished_app_flow.png)
