@@ -1,8 +1,3 @@
----
-title: "Adding UI"
-slug: adding-ui
----
-
 Up to this point, we haven't done anything that changes what our app will do when it's run. As we can see from running our app in the simulator, it's still just an empty, blank white screen.
 
 In this section, we'll build the UI for our Magic 8-Ball.
