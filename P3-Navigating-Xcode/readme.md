@@ -1,8 +1,3 @@
----
-title: "Navigating Xcode"
-slug: navigating-xcode
----
-
 Let's take a look around our newly created Xcode project. All of the files and settings in our current Xcode project are the default configurations when a project is created from the _Single View App_ template.
 
 To see what's in our project and navigate file to file, we'll need to using the _Navigator_.
