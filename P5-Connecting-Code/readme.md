@@ -1,8 +1,3 @@
----
-title: "Connecting Code"
-slug: connecting-code
----
-
 In this section, we'll take a look at how our storyboard connects to code. When you run the app now, you'll notice that when we click _shake button_ in the simulator, nothing happens.
 
 That's because our app won't do anything if we don't write any code. You can think of the code you write as instructions that tell the app what to do when a user is using it. When there aren't any instructions, the app won't do anything.
