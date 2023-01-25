@@ -46,9 +46,6 @@ If you can't see your object library, click on the `+` button on top of your __U
 
 Now let's add our Magic 8-Ball _Shake It!_ button to our view controller.
 
-> [action]
-![ms-video](./assets/add_button_to_vc.mov)
->
 Find the `Button` object in the _Object Library_ and drag and drop it onto the root view of your view controller.
 
 Next, let's learn more about the _Utilities area_ so we can configure our button to have the right title text.
