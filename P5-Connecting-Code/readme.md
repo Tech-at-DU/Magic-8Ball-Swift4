@@ -129,11 +129,11 @@ We've managed to print a log to the console when the button is tapped. Let's tak
 
 > [action]
 In `ViewController.swift`, add the following line of code to `shakeButtonTapped(_:)`:
->
+
 ```
 @IBAction func shakeButtonTapped(_ sender: Any) {
     print("Shake it like a polaroid picture!")
->
+
     answerLabel.text = "button was tapped"
 }
 ```
@@ -173,7 +173,9 @@ class ViewController: UIViewController {
 
 For your convenience, here's a the plain text version of the answers array code above:
 
+```Swift
 let answers = ["Yes, definitely", "It is certain", "Without a doubt", "Yes", "Most likely", "Sure, why not?", "Same", "Tell me more", "Out to lunch", "Reply hazy, try again", "Ask again later", "The cake is a lie", "42", "TMI", "Very doubtful", "Don't count on it", "My reply is no", "Absolutely not"]
+```
 
 With our new array of answers, we can randomly select an item in our array whenever the shake button is tapped and change the text of the answer label to display it.
 
