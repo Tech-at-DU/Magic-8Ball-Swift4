@@ -101,7 +101,7 @@ If you're wondering why there are so many empty app icon placeholders, it's to s
 For our Magic 8-Ball app, we'll only add the app icon images to be displayed on the home screen. When you're really submitting your app to the App Store, you'll need to make sure to account for all the relevant app icon sizes.
 
 > [action]
-Go ahead and download the Magic 8-Ball app icon images by [clicking here](https://github.com/MakeSchool-Tutorials/Magic-8Ball-Swift4/raw/master/magic_app_icon.zip). After downloading and unzipping your image assets, drag and drop the `app_icon@2x.png` into `iPhone App iOS 7-14 60pt 2x` empty placeholder. Repeat and do the same for `app_icon@3x.png` with `iPhone App iOS 7-14 60pt 3x`.
+Go ahead and download the Magic 8-Ball app icon images by [clicking here](../magic_app_icon.zip). After downloading and unzipping your image assets, drag and drop the `app_icon@2x.png` into `iPhone App iOS 7-14 60pt 2x` empty placeholder. Repeat and do the same for `app_icon@3x.png` with `iPhone App iOS 7-14 60pt 3x`.
 
 When you're finished, your _AppIcon_ image set should look like the following:
 

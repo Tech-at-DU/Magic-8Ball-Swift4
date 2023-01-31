@@ -157,44 +157,40 @@ Use the _Project navigator_ to display `ViewController.swift` in the _Standard E
 
 Next, let's implement our logic. First, we'll add an instance variable that is an array of strings containing all possible answers of our Magic 8-Ball. Feel free to add in some of your own!
 
-> [action]
-Add the following array of strings above our IBOutlets:
->
+> [action] Add the following array of strings above our IBOutlets:
+
 ```
 class ViewController: UIViewController {
->
     // MARK: - Properties
->
     let answers = ["Yes, definitely", "It is certain", "Without a doubt", "Yes", "Most likely", "Sure, why not?", "Same", "Tell me more", "Out to lunch", "Reply hazy, try again", "Ask again later", "The cake is a lie", "42", "TMI", "Very doubtful", "Don't count on it", "My reply is no", "Absolutely not"]
->
+
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var shakeButton: UIButton!
->
+
     // ... rest of code
 }
 ```
->
+
 For your convenience, here's a the plain text version of the answers array code above:
->
+
 let answers = ["Yes, definitely", "It is certain", "Without a doubt", "Yes", "Most likely", "Sure, why not?", "Same", "Tell me more", "Out to lunch", "Reply hazy, try again", "Ask again later", "The cake is a lie", "42", "TMI", "Very doubtful", "Don't count on it", "My reply is no", "Absolutely not"]
 
 With our new array of answers, we can randomly select an item in our array whenever the shake button is tapped and change the text of the answer label to display it.
 
-> [action]
-To randomly choose an answer, we can use the `Int.random(in:)` method. Change `shakeButtonTapped` in our view controller to the following:
->
+> [action] To randomly choose an answer, we can use the `Int.random(in:)` method. Change `shakeButtonTapped` in our view controller to the following:
+
 ```
 @IBAction func shakeButtonTapped(_ sender: UIButton) {
     // 1
     let randomIndex = Int.random(in: 0..<answers.count)
->
+
     // 2
     answerLabel.text = answers[randomIndex]
 }
 ```
->
+
 Let's break down our code step by step above:
->
+
 1. We use `Int.random(in:)` to randomly generate a index of an answer (between `0` and the number of answers we have).
 1. Last, we set the answer's label text to match the randomly generated answer.
 
@@ -210,19 +206,18 @@ The iPhone by default has implemented certain methods you can override to listen
 
 For the shake gesture, we can override a system implemented function and place our own functionality so that the label changes if the user shakes their app.
 
-> [action]
-Add the following method to your view controller:
->
+> [action] Add the following method to your view controller:
+
 ```
 override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
     guard motion == .motionShake else { return }
->
+
     let randomIndex = Int.random(in: 0..<answers.count)
->
+
     answerLabel.text = answers[randomIndex]
 }
 ```
->
+
 As you can see, we override the `motionEnded(_:with:)` event and check for the `.motionShake` event. If triggered, we run the same logic to randomly select and display an answer.
 
 # Keeping Things DRY
@@ -236,28 +231,27 @@ In our current logic, you can see that we have the same logic for randomly choos
 
 > [action]
 In `ViewController.swift` add the following method:
->
+
 ```
 func generateAnswer() {
     let randomIndex = Int.random(in: 0..<answers.count)
->
+
     answerLabel.text = answers[randomIndex]
 }
 ```
 
 Next we can refactor our code to use our new `generateAnswer` method:
 
-> [action]
-Change both `shakeButtonTapped(_:)` and `motionEnded(_:with:)` to the following respectively:
->
+> [action] Change both `shakeButtonTapped(_:)` and `motionEnded(_:with:)` to the following respectively:
+
 ```
 @IBAction func shakeButtonTapped(_ sender: Any) {
     generateAnswer()
 }
->
+
 override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
     guard motion == .motionShake else { return }
->
+
     generateAnswer()
 }
 ```
