@@ -64,3 +64,11 @@ Your app will generate new startup idea whenever the user taps the generate butt
 Another fun way to make use of this app (when you're done) is by practicing your pitching skills with friends. Take turns generating startup ideas with your app and pretend to give a 1 minute pitch to your friends. Your friends can act as investors. At the end of each round, everyone can decide who got funding and who didn't.
 
 Good luck the challenge! Remember, you can look back on the tutorial or your previous code if you get stuck.
+
+## Challenge Try some new UI Elements 
+
+You may have noticed that the Library palette has many UI elements of which you only used two in this example: UIButton and UILabel. 
+
+Try this: 
+
+Add a UISegmentedControl set some options and use this to choose from 2 or more different lists. You'll need an IBOutlet to access the `selectedSegmentIndex` which is an Int that indicates which segment is selected. Use the Attributes inspector to set options for the UISegmentedControl. 
